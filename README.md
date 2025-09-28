@@ -3,7 +3,7 @@
 *Academic project analyzing a bike-share dataset using Python and Tableau. Applies statistical methods and an A/B test to explore real-world business scenarios, uncover patterns, and generate actionable insights.*
 
 ---------------------------------
-## I- Business Framing & Context
+## I- BUSINESS FRAMING & CONTEXT
 This project is centered on a **bike-share company** seeking to gain a deeper understanding of its riders’ behavior over a two-year period (2011–2012), based on an hourly dataset. The business context is to identify when, where, and how ridership patterns shift across user types (casual vs. registered), time windows (commuting vs. leisure hours), and external conditions (holidays, weather, and seasons).
 
 The company’s stakeholders are interested in insights that support both operational and strategic decisions:
@@ -14,7 +14,7 @@ The company’s stakeholders are interested in insights that support both operat
 
 To address these needs, the project applies **inferential statistics, hypothesis testing, and an A/B testing experiment** to evaluate real-world scenarios. The results are visualized in Python and Tableau, turning raw ridership data into actionable insights for business decision-making.
 
-## II- Methods Summary
+## II- METHODS SUMMARY
 1. **Data Cleaning**:
 + Correcting data types for columns : dteday, season, year, holiday, weekday, workingday, weathersit
 + Data quality check: count of hour for each day, check missing values, ensuring each year has 12 months.
@@ -26,7 +26,7 @@ T-tests, welch's T-test, ANOVA, two-way ANOVA, Sampling techniques computing P-v
 4. **A/B Testing:**
   - Primary metric: average houly riders pre/post-feature on working days and specific weather conditions
   - Guardrail metric: average registered riders pre/post-feature.
-## III- Findings
+## III- FINDINGS
 1. **Hourly Rides: Working vs Non-Working Days**
 
 We examined whether hourly rides differ between working and non-working days. The T-test indicated a significant difference (p = 0.000231, 95% CI [-19.29, -5.89]). This highlights predictable patterns in ridership, enabling the company to optimize operations, inventory, and marketing campaigns according to daily demand variations.
@@ -54,4 +54,30 @@ We explored if holidays affect casual and registered riders differently using a 
 
 7. **Simulated A/B Test: Feature Impact**
 
-To assess the effect of a small app feature, we simulated an A/B test. For the primary metric (total riders), the increase post-feature was not statistically significant (p = 0.078, 95% CI [-101.26, 5.51]). For the guardrail metric (registered riders), there was no negative effect (p = 0.9936, 95% CI [-104.95, ∞]). This suggests that the feature, even without a significant improvement, does not negatively affect our chosen guardrail. In terms of practical significance and feature release, two options can be suggested: improving the feature before release, Or launching the feature to get advantage of a novelty effect, since the feature doesn't harm our other metric (guardrail).
+To assess the effect of a small app feature, we simulated an A/B test. For the primary metric (total riders), the increase post-feature was not statistically significant (p = 0.078, 95% CI [-101.26, 5.51]). For the guardrail metric (registered riders), there was no negative effect (p = 0.9936, 95% CI [-104.95, ∞]). This suggests that the feature, even without a significant improvement, does not negatively affect our chosen guardrail. In terms of practical significance and feature release, two options can be suggested: improving the feature before release, or launching the feature to get advantage of a novelty effect, since the feature doesn't harm our other metric (guardrail)
+**Implication:** Feature is safe but not driving meaningful growth.
+
+
+## IV- RECOMMENDATIONS:
+**Product manager and Marketing team:** 
+
+  - Launch "Holiday Explorer Pass" targeting casual users with day passes on tourist-friendly routes
+  - Implement weekly fare caps for registered riders like the MTA *New york city metro system* (free rides after certain threshold)
+  - Aggressive acquisition campaigns in Fall, to maintain ridership as long as possible before Winter, which is the lowest ridership season.
+
+**Operations Lead**
+
+  - Morning peaks: Concentrate bikes in residential areas
+  - Dynamic Bike Redistribution
+  - Holidays: Focus on tourist areas and recreational routes
+  - Increase availability during "clear" and "few clouds" conditions (highest demand)
+  - Develop "Weather Guarantee" promotions for rainy days
+  - Implement dynamic pricing that rewards riding in less-than-ideal conditions
+  - Schedule major maintenance during low-demand periods identified in seasonal analysis
+
+**Policy & Ethics Advisor**
+
+  - Maintain offline registration options for elderly and low-digital-literacy users
+  - Dynamic pricing and bike redistribution could disadvantage certain neighborhoods, so conducting regular equity audits of bike availability across neighborhoods is crucial for ethics     and equity purposes.
+  - Registered commuters demonstrate high dependency on service for essential transportation, so implementing the weekly fare cap to protect frequent low income commuters.
+
