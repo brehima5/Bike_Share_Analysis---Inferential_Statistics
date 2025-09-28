@@ -81,3 +81,9 @@ To assess the effect of a small app feature, we simulated an A/B test. For the p
   - Dynamic pricing and bike redistribution could disadvantage certain neighborhoods, so conducting regular equity audits of bike availability across neighborhoods is crucial for ethics     and equity purposes.
   - Registered commuters demonstrate high dependency on service for essential transportation, so implementing the weekly fare cap to protect frequent low income commuters.
 
+## V- Ethics & limitations
+
+Overall, the dataset was very clean. a few things limitations are :
+- 78 days of the data had less than 24hours, 8 with less than 22 hours: it is a small percentage, so we didn't take action for it.
+- Comparing the means of certain varibales needed a particular approach than just using the appropriate statistical method: this is the case for working days vs non working days where we used a sampling technique to balance the samples sizes before running the test. 
+
