@@ -1,8 +1,12 @@
 # Bike_Share_Analysis---Inferential_Statistics
 
+<img width="1800" height="1800" alt="image" src="https://github.com/user-attachments/assets/f525d351-efd6-428c-88a8-347a319f87b0" />
+
+
+
 *Academic project analyzing a bike-share dataset using Python and Tableau. Applies statistical methods and an A/B test to explore real-world business scenarios, uncover patterns, and generate actionable insights.*
 
----------------------------------
+------------------------------
 ## I- BUSINESS FRAMING & CONTEXT
 This project is centered on a **bike-share company** seeking to gain a deeper understanding of its riders’ behavior over a two-year period (2011–2012), based on an hourly dataset. The business context is to identify when, where, and how ridership patterns shift across user types (casual vs. registered), time windows (commuting vs. leisure hours), and external conditions (holidays, weather, and seasons).
 
@@ -114,5 +118,7 @@ To assess the effect of a small app feature, we simulated an A/B test. For the p
 
 Overall, the dataset was very clean. a few things limitations are :
 - 78 days of the data had less than 24hours, 8 with less than 22 hours: it is a small percentage, so we didn't take action for it.
-- Comparing the means of certain varibales needed a particular approach than just using the appropriate statistical method: this is the case for working days vs non working days where we used a sampling technique to balance the samples sizes before running the test. 
+- Comparing the means of certain varibales needed a particular approach than just using the appropriate statistical method: this is the case for working days vs non working days where we used a sampling technique to balance the samples sizes before running the test.
+
+**Slides Presentation link: https://docs.google.com/presentation/d/1taCpgWLAdmFbcIWd_5KManREmJ1MLAoC8TFPoB3Wafo/edit?slide=id.p#slide=id.p**
 
